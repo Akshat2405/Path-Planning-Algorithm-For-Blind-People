@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dijkstra</title>
+    <link href="https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="section">
+      <div style="z-index: 1;">
+        <h1 class="header_of">DIJKSTRA ALGORITHM</h1>
+    <div class="cont"><button type ="reset" value="Reset" id="restart"  onclick="reset()" >Reset</button></div>
+    <div id="maze-body"></div>
+
+    <div id="buttons">
+      <div id="optidistance"></div>
+      <button class="start-button" id="dijk-button" onclick="dijstart()">
+        Dijkstra's  Algorithm
+      </button>
+      <div id="dikdistance"></div>
+    </div>
+  </div>
+
+      <div class="video-container">
+          <div class="color-overlay"></div>
+          <video autoplay loop muted width="100%">
+              <source src="vedio2.mp4" height="100vh" type="video/mp4">
+          </video>
+      </div>
+
+  </div>
+    
+  </body>
+  <script src="script.js" defer></script>
+</html>

@@ -1,0 +1,236 @@
+#maze-body {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  margin: auto;
+  z-index: 1;
+}
+
+#path-display {
+  padding: 20px;
+  font-size: 2rem;
+  text-align: center;
+  z-index: 1;
+}
+
+.square {
+  height: 40px;
+  width: 40px;
+  background-color: rgb(235, 235, 235);
+  border: 2px solid rgba(255, 255, 255, 0);
+  z-index: 1;
+}
+.square:hover{
+  cursor: pointer;
+  z-index: 1;
+}
+
+.obstacle {
+  background-color: rgb(34, 34, 34);
+  z-index: 1;
+}
+
+#buttons {
+  margin: 10px auto;
+  align-content: center;
+  /* margin: auto; */
+  text-align: center;
+  z-index: 1;
+}
+
+button {
+  border-radius: 7px;
+  color: white;
+  font-size: 1.5rem;
+  padding: 6px 10px;
+  border: 2px solid white;
+  /* box-shadow: 5px 5px 5px rgb(190, 190, 190); */
+  /* background-color: rgb(40, 69, 78); */
+  color: rgb(255, 255, 255);
+  transition: 0.3s;
+  align-content: center;
+  margin: auto;
+  z-index: 1;
+}
+.start-button {
+  background-color: black;
+  color: white;
+  z-index: 1;
+}
+.start-button:hover {
+  background-color: rgb(21, 63, 13);
+  cursor: pointer;
+  z-index: 1;
+}
+.running-button:hover {
+  background-color: rgb(12, 32, 8);
+  cursor: not-allowed;
+  z-index: 1;
+}
+.stop-button {
+  background-color: rgb(179, 65, 65);
+  color: white;
+  z-index: 1;
+}
+.stop-button:hover {
+  background-color: rgb(97, 35, 35);
+  cursor: pointer;
+  z-index: 1;
+}
+
+.last-square {
+  background-color: rgba(129, 15, 15, 0.37);
+  z-index: 1;
+}
+
+.visited-square {
+  background-color: rgb(107, 175, 196);
+  z-index: 1;
+}
+
+.found-path {
+  background-color: rgb(129, 15, 15);
+  z-index: 1;
+}
+.shop {
+  background-color: rgb(58, 13, 165);
+  z-index: 1;
+}
+
+
+
+#paths-list {
+  font-size: 1.5rem;
+  text-align: center;
+  z-index: 1;
+}
+
+#path-list ul {
+  list-style-type: none;
+  z-index: 1;
+}
+.space {
+  background-color:#beffb6;
+  font-size: 1.5rem;
+  z-index: 1;
+}
+.vl{
+  border-left: 2px solid green;
+  z-index: 1;
+}
+
+#opti-button{
+  background-color:#26a69a;
+  z-index: 1;
+}
+#dijk-button{
+  background-color:#546e7a;
+  z-index: 1;
+}
+.divider {
+  width: 2px;
+  height: 50px;
+  margin:0 15px;
+  padding: 10px 0;
+  background: blue;
+  color: blue;
+  z-index: 1;
+}
+
+.suggester{
+  height:  2px;
+  width: 50px;
+  margin:15px 0;
+  padding: 0 10px;
+  background: blue;
+  color: blue;
+  z-index: 1;
+}
+.header_of {
+  margin: 15px;
+  text-align: center;
+  font-family: 'Henny Penny', cursive;
+  color: black;
+  text-shadow: 5px 8px 10px rgb(112, 113, 110); 
+  z-index: 1;
+}
+.sub{
+  font-size: 0.8rem;
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  z-index: 1;
+
+}
+#restart{
+background-color: black;
+margin-bottom: 5px;
+margin-right: 70px;
+color: white;
+border: 2px solid white;
+z-index: 1;
+}
+#restart :hover{
+background-color:white;
+color: black;
+cursor: pointer;
+z-index: 1;
+}
+.cont{
+text-align: right;
+z-index: 1;
+}
+#dikdistance{
+background-color:  white;
+border: 2px solid #546e7a;
+border-radius: 10px;
+padding: 10px;
+z-index: 1;
+}
+#optidistance{
+background-color:  white;
+border: 2px solid #26a69a;
+border-radius: 10px;
+padding: 10px;
+z-index: 1;
+}
+#buttons{
+display: flex;
+justify-content: center;
+align-items: center;
+z-index: 1;
+}
+    body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0px;
+}
+    .section {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    
+    
+    
+    .video-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+    
+    .color-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: lightblue;
+      width: 100%;
+      height: 100%;
+      opacity: 0.5;
+    }
